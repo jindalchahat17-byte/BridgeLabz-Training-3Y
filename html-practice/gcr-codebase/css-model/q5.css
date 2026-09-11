@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+header {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.content {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+/* Attribute selector: selects text input */
+input[type="text"] {
+    border: 3px solid #2563eb;
+}
+
+/* Attribute selector: selects links beginning with https */
+a[href^="https"] {
+    color: #dc2626;
+}
+
+/* Pseudo-class: hover */
+a:hover {
+    color: #16a34a;
+}
+
+/* Pseudo-class: focus */
+input:focus {
+    outline: 3px solid #facc15;
+}
+
+/* Pseudo-class: nth-child */
+.items li:nth-child(odd) {
+    background-color: #e2e8f0;
+}
+
+/* Pseudo-element: before */
+h2::before {
+    content: "★ ";
+}
+
+/* Pseudo-element: after */
+h2::after {
+    content: " ★";
+}
+
+/* Descendant combinator */
+.content p {
+    margin-top: 20px;
+}
+
+/* Child combinator > */
+.items > li {
+    padding: 10px;
+}
+
+/* Adjacent sibling combinator + */
+h2 + .items {
+    margin-top: 15px;
+}
+
+/* General sibling combinator ~ */
+h2 ~ p {
+    color: #475569;
+}
+
+.items {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+input,
+button {
+    padding: 12px;
+    margin: 8px;
+}
+
+button {
+    cursor: pointer;
+}

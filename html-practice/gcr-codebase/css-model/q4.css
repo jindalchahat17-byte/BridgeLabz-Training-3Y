@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+header {
+    text-align: center;
+    background-color: #0f172a;
+    color: white;
+    padding: 25px;
+}
+
+header h1 {
+    text-shadow: 3px 3px 5px #555;
+}
+
+.cards {
+    min-height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    padding: 35px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+
+    transition: all 0.4s ease;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+.shadow-one {
+    box-shadow: 5px 5px 10px #999;
+}
+
+.shadow-two {
+    box-shadow: 0 10px 25px #bbb;
+}
+
+.shadow-three {
+    box-shadow: 0 15px 30px #777;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 35px #555;
+}
