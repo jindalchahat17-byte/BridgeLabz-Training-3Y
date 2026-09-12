@@ -1,0 +1,51 @@
+/* Element selector */
+p {
+    margin: 15px;
+}
+
+/* Class selector */
+.highlight {
+    background: yellow;
+}
+
+/* ID selector */
+#special {
+    color: red;
+    font-weight: bold;
+}
+
+/* Attribute selector */
+a[href] {
+    color: blue;
+}
+
+/* Descendant selector */
+.parent p {
+    color: purple;
+}
+
+/* Child selector */
+.parent > div {
+    background: lightblue;
+}
+
+/* Adjacent sibling selector */
+.parent div + p {
+    background: lightgreen;
+}
+
+/* General sibling selector */
+.parent div ~ p {
+    padding: 10px;
+}
+
+header, footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 30px;
+}

@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background: #222;
+    color: white;
+    padding: 20px;
+}
+
+.animations {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Moving box */
+.box {
+    padding: 20px;
+    background: tomato;
+    animation: move 3s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(-150px);
+    }
+
+    to {
+        transform: translateX(150px);
+    }
+}
+
+/* Bouncing ball */
+.ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: royalblue;
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-80px);
+    }
+}
+
+/* Color changing text */
+.text {
+    animation: colorChange 2s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+    from {
+        color: red;
+    }
+
+    to {
+        color: blue;
+    }
+}
