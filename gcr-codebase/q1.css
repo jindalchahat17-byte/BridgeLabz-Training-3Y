@@ -1,0 +1,19 @@
+/* Hero section background */
+.hero-section {
+    background: #f5f8ff;
+    padding: 70px 0;
+}
+
+/* Minimum height for hero section */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Smooth button transition */
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
